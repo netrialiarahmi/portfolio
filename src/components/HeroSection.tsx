@@ -105,21 +105,22 @@ export function HeroSection() {
               >
                 <EnvelopeSimple size={20} className="mr-2" weight="fill" />
                 Get In Touch
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-accent/50 text-accent hover:bg-accent/10 hover:border-accent shadow-md hover:shadow-lg transition-all duration-300"
-                onClick={() => {
-                  const link = document.createElement('a')
-                  link.href = resumePDF
-                  link.download = 'CV_Netri_Alia_Rahmi_Data_Analyst.pdf'
-                  link.click()
-                }}
-              >
-                <DownloadSimple size={20} className="mr-2" weight="bold" />
-                Download Resume
-              </Button>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-accent/50 text-accent hover:bg-accent/10 hover:border-accent shadow-md hover:shadow-lg transition-all duration-300"
+              onClick={() => setResumeClicked(true)}
+            >
+              {resumeClicked ? (
+                "Resume available upon request"
+              ) : (
+                <>
+                  <DownloadSimple size={20} className="mr-2" weight="bold" />
+                  Download Resume
+                </>
+              )}
+            </Button>
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex gap-3 justify-center lg:justify-start">
