@@ -105,6 +105,7 @@ export function HeroSection() {
               >
                 <EnvelopeSimple size={20} className="mr-2" weight="fill" />
                 Get In Touch
+            const [resumeClicked, setResumeClicked] = useState(false)
             </Button>
             <Button
               size="lg"
