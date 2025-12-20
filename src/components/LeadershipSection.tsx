@@ -27,8 +27,7 @@ const leadership = [
       },
     ],
     socialMedia: [
-      { name: 'MSIB 7', url: '#' },
-      { name: 'TRIBE', url: '#' },
+      { name: '@magangmerdeka', url: 'https://www.instagram.com/magangmerdeka/' }
     ],
   },
   {
@@ -53,7 +52,7 @@ const leadership = [
       },
     ],
     socialMedia: [
-      { name: '@irisearch', url: '#' },
+      { name: '@irisearch', url: 'https://www.instagram.com/irisearch/' },
     ],
   },
   {
@@ -78,7 +77,7 @@ const leadership = [
       },
     ],
     socialMedia: [
-      { name: '@ind_mengajar', url: '#' },
+      { name: '@ind_mengajar', url: 'https://www.instagram.com/ind_mengajar/' },
     ],
   },
 ]
