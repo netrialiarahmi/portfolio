@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { GithubLogo, LinkedinLogo, EnvelopeSimple, ArrowDown, DownloadSimple } from '@phosphor-icons/react'
@@ -25,6 +26,8 @@ const itemVariants = {
 }
 
 export function HeroSection() {
+  const [resumeClicked, setResumeClicked] = useState(false)
+  
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -105,8 +108,7 @@ export function HeroSection() {
               >
                 <EnvelopeSimple size={20} className="mr-2" weight="fill" />
                 Get In Touch
-            const [resumeClicked, setResumeClicked] = useState(false)
-            </Button>
+              </Button>
             <Button
               size="lg"
               variant="outline"
