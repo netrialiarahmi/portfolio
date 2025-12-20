@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { GithubLogo, LinkedinLogo, EnvelopeSimple, ArrowDown, DownloadSimple } from '@phosphor-icons/react'
+import { toast } from 'sonner'
 import profileImage from '@/assets/images/Netri_Alia_Rahmi_HR_Data_&_Analytics.jpg'
-import resumePDF from '@/assets/documents/CV.pdf'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,8 +25,6 @@ const itemVariants = {
 }
 
 export function HeroSection() {
-  const [resumeClicked, setResumeClicked] = useState(false)
-  
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -113,16 +110,14 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               className="border-2 border-accent/50 text-accent hover:bg-accent/10 hover:border-accent shadow-md hover:shadow-lg transition-all duration-300"
-              onClick={() => setResumeClicked(true)}
+              onClick={() => {
+                toast.info('Resume available upon request', {
+                  description: 'Please contact me to request my full resume.'
+                })
+              }}
             >
-              {resumeClicked ? (
-                "Resume available upon request"
-              ) : (
-                <>
-                  <DownloadSimple size={20} className="mr-2" weight="bold" />
-                  Download Resume
-                </>
-              )}
+              <DownloadSimple size={20} className="mr-2" weight="bold" />
+              Download Resume
             </Button>
             </motion.div>
 
