@@ -70,7 +70,7 @@ export function EducationSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">English Proficiency</p>
-                    <p className="text-lg font-semibold">TOEFL-ITP: 517</p>
+                    <p className="text-lg font-semibold">TOEFL-ITP: 583</p>
                     <p className="text-sm text-foreground/60">CEFR B2 | ELPT: 550</p>
                   </div>
                 </div>
