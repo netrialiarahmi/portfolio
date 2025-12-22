@@ -15,7 +15,7 @@ const competitionProjects = [
       'Achieved a 98.5% overall classification accuracy, outperforming prior benchmarks like CNN+SVM (94.8%) and Back-Propagation Neural Networks (91.9%). The model demonstrated high reliability across four classes, including 99.5% for "Notumor" and 99.0% for "Meningioma"',
       'Delivered a tool that accelerates diagnosis from weeks to minutes, supports Indonesia\'s Tele-Radiology services, and fulfills all 7 dimensions of WHO service quality, with the ultimate goal of reducing the national mortality rate',
     ],
-    techStack: ['Python', 'Vision Transformer (ViT)', 'TensorFlow', 'Deep Learning', 'Medical Imaging', 'MRI Analysis', 'Streamlit', 'Healthcare AI'],
+    techStack: ['Python', 'Classification', 'Vision Transformer (ViT)', 'TensorFlow', 'Deep Learning', 'Medical Imaging', 'MRI Analysis', 'Healthcare AI'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netrialiarahmi/zgrp/', label: 'Publication' },
       { type: 'webapp', url: 'https://apto-braintumor.streamlit.app', label: 'Web App' },
@@ -31,7 +31,7 @@ const competitionProjects = [
       'Deployed the predictive model to identify high-potential customer segments, enabling a strategic shift from mass-marketing to targeted campaigns. This data-driven approach allowed for more efficient budget allocation, contributing to a 20% reduction in marketing costs while improving campaign relevance and driving a 30% increase in customer response rates',
       'Contributed to a 25% Increase in Customer Retention Through Personalization. Utilized the model to predict promotion acceptance on an individual customer level, enabling the delivery of highly personalized offers based on unique shopping behaviors',
     ],
-    techStack: ['Python', 'CatBoost', 'XGBoost', 'LightGBM', 'Ensemble Learning', 'Soft Voting', 'Scikit-learn', 'Pandas', 'Streamlit', 'Data Visualization'],
+    techStack: ['Python','Classification', 'Tree Model', 'Ensemble Learning', 'Soft Voting', 'Scikit-learn', 'Pandas', 'Streamlit', 'Data Visualization'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netrialiarahmi/bgpb/', label: 'Publication' },
       { type: 'webapp', url: 'https://iristentan-findit2024.streamlit.app', label: 'Web App' },
@@ -47,7 +47,7 @@ const competitionProjects = [
       'Achieved 98.04% F1 Score in Health Prediction. The ensemble model delivered exceptional performance, achieving an F1 Score of 98.04% and an accuracy of 97.96% in predicting cholesterol levels, demonstrating high precision and reliability for a critical health metric',
       'Developed a Robust, Multi-Classifier Machine Learning Framework. Engineered a sophisticated and reliable machine learning framework that successfully integrates multiple diverse classifiers. This provided a powerful system for delivering the personalized healthcare recommendations essential for proactive health management',
     ],
-    techStack: ['Python', 'CatBoost', 'ExtraTreesClassifier', 'Neural Networks', 'Ensemble Learning', 'Feature Engineering', 'Scikit-learn', 'TensorFlow', 'Healthcare Analytics'],
+    techStack: ['Python', 'Regression', 'Tree Model', 'Neural Networks', 'Ensemble Learning', 'Feature Engineering', 'Scikit-learn', 'TensorFlow', 'Healthcare Analytics'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netrialiarahmi/kpdg/', label: 'Publication' },
       { type: 'webapp', url: 'https://cholesterol-prediction.streamlit.app', label: 'Web App' },
@@ -63,7 +63,7 @@ const competitionProjects = [
       'Achieved 98.7% Accuracy with High-Speed Processing. The ResNet50 model delivered a 98.7% accuracy in recognizing numbers and symbols on C1 forms. The system was optimized to achieve a processing time of under 10 seconds per form, making it highly effective for rapid validation',
       'Designed a Scalable Solution for Enhanced Electoral Transparency. Provided an essential tool for improving data transparency, designed for real-time vote tallying across 200 polling stations and scalable to support up to 700 election locations',
     ],
-    techStack: ['Python', 'ResNet50', 'OCR', 'Computer Vision', 'Deep Learning', 'TensorFlow', 'Image Preprocessing', 'OpenCV', 'Election Technology'],
+    techStack: ['Python', 'Classification', 'ResNet50', 'OCR', 'Computer Vision', 'Deep Learning', 'TensorFlow', 'Image Preprocessing', 'OpenCV', 'Election Technology'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netrialiarahmi/oelb/', label: 'Publication' },
       { type: 'presentation', url: 'https://perfectia.my.canva.site/gammafestipb', label: 'Presentation' },
@@ -79,7 +79,7 @@ const competitionProjects = [
       'Dramatically improved approval efficiency by increasing the approval rate from a baseline of 11.3% to 70.3%. Minimized financial risk for the institution by reducing the credit default rate to an exceptionally low 0.1%, effectively filtering out high-risk applicants',
       'Achieved a 90.32% accuracy in classifying different mental health conditions, demonstrating the model\'s high reliability for clinical support. Provided clear, actionable insights into the key drivers of creditworthiness by using SHAP analysis',
     ],
-    techStack: ['Python', 'CatBoost', 'SHAP', 'LLaMA 3.1', 'LangChain', 'NLP', 'Explainable AI', 'Scikit-learn', 'Streamlit', 'Financial Analytics'],
+    techStack: ['Python', 'Classification','CatBoost', 'SHAP', 'LLaMA 3.1', 'LangChain', 'NLP', 'Explainable AI', 'Scikit-learn', 'Financial Analytics'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netrialiarahmi/hxta/', label: 'Publication' },
       { type: 'webapp', url: 'https://fintech-risk-iconic.streamlit.app', label: 'Web App' },
@@ -95,7 +95,7 @@ const competitionProjects = [
       'Delivered a Comprehensive Machine Learning Framework for Pricing. Provided a reusable framework that integrates time-series forecasting (Prophet) with advanced outlier detection (LightGBM, CatBoost). This enables Bukit Vista to continuously optimize pricing based on market trends and supports dynamic, data-informed decision-making',
       'Identified Actionable Opportunities for Strategic Growth. The analysis extended beyond pricing to provide data-backed recommendations for business growth. This included identifying and recommending strategic expansion into underrepresented, high-potential areas like Kintamani to improve market reach',
     ],
-    techStack: ['Python', 'Prophet', 'LightGBM', 'CatBoost', 'Time Series Forecasting', 'Outlier Detection', 'Ensemble Learning', 'Data Visualization', 'Market Analysis'],
+    techStack: ['Python', 'Clustering',  'Time Series','Spatial Analysis', 'Outlier Detection','Prophet', 'Ensemble Learning', 'Data Visualization', 'Market Analysis'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netrialiarahmi/hxta/', label: 'Publication' },
       { type: 'presentation', url: 'https://www.canva.com/design/DAGzWjT5eOI/sPSazDLbp7pNUqXeyQJfkA/view?utm_content=DAGzWjT5eOI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc10b82ba38', label: 'Presentation' },
@@ -111,7 +111,7 @@ const competitionProjects = [
       'Achieved High-Precision Forecasting with an RMSE of 19.05. The LightGBM model delivered exceptional precision, achieving a low Root Mean Square Error (RMSE) of 19.05 on the test data. This demonstrated the model\'s strong capability to accurately forecast carbon emissions',
       'Delivered Actionable Insights for Emission Reduction. The model successfully identified vehicles with high emission rates (over 243 g/km). Based on these predictions, the platform provided tailored recommendations for reducing emissions by optimizing factors like engine size and transmission type',
     ],
-    techStack: ['Python', 'LightGBM', 'Machine Learning', 'Cross-Validation', 'Scikit-learn', 'Pandas', 'Environmental Analytics', 'Emission Forecasting'],
+    techStack: ['Python','Regression', 'LightGBM', 'Machine Learning', 'Cross-Validation', 'Scikit-learn', 'Pandas', 'Environmental Analytics', 'Emission Forecasting'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netri/unob/', label: 'Publication' },
       { type: 'github', url: 'https://github.com/netrialiarahmi/Predictive-Modeling-for-Carbon-Emission-Reduction', label: 'GitHub' },
@@ -126,7 +126,7 @@ const competitionProjects = [
       'The fine-tuned NLI model achieved a final accuracy of 85.42% on the unseen test set (a 25.6% improvement over its 68% baseline), with a high macro precision of 85.66%. Demonstrated real-world value by analyzing approximately 1 million legal clause pairs and successfully performing a zero-shot prediction',
       'Engineered the plate detection system using CRAFT for text detection and a CRNN for character recognition. Achieved 98.89% recognition accuracy while processing 200 images in just 36 seconds',
     ],
-    techStack: ['Python', 'BERT', 'IndoBERT', 'NLP', 'MLM', 'NLI', 'Transformers', 'CRAFT', 'CRNN', 'OCR', 'Computer Vision', 'PyTorch', 'Legal Tech'],
+    techStack: ['Python', 'Classification', 'Indo-LegalBERT', 'NLP', 'MLM', 'NLI', 'Transformers', 'CRAFT', 'CRNN', 'OCR', 'Computer Vision', 'PyTorch', 'Legal Tech'],
     links: [
       { type: 'publication', url: 'https://online.fliphtml5.com/netri/rknr/', label: 'Publication' },
       { type: 'webapp', url: 'https://huggingface.co/archi-ai/Indo-LegalBERT', label: 'HuggingFace' },
