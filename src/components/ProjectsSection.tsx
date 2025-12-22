@@ -14,7 +14,7 @@ const sideProjects = [
   },
   {
     title: 'Analysis of Education in Indonesia',
-    tech: ['Python','EDA','Spatial Analysis', 'Sentiment Analysis', 'K-Means Clustering'],
+    tech: ['Python','K-Means Clustering','Spatial Analysis','EDA', 'Sentiment Analysis'],
     category: 'Statistical Analysis',
     description: 'Utilizing a 10-year dataset (2013-2023) from BPS, this project employed K-Means clustering to segment provinces, time-series analysis of key indices, and sentiment analysis using IndoBERT. The analysis identified 4 provincial clusters, revealing Papua\'s critical needs with the lowest participation rates and 28.51% of the population over 10 who have never attended school. Sentiment analysis of 484 social media data points uncovered strongly negative public sentiment regarding education costs.',
     link: 'https://github.com/netrialiarahmi/Indonesia-Education-Analysis',
@@ -28,7 +28,7 @@ const sideProjects = [
   },
   {
     title: 'Automated Sentiment Analysis For The Indonesian EV Market',
-    tech: ['LLaMA 3.1', 'classification','Business KPI', 'Sentiment Analysis','CRISP-DM'],
+    tech: ['LLaMA 3.1', 'Classification','Business KPI', 'Sentiment Analysis','CRISP-DM'],
     category: 'NLP',
     description: 'A LLaMA 3.1 model was fine-tuned on a custom dataset of Indonesian social media, forums, and news articles to accurately interpret and classify public opinion on electric vehicles. The model drove a 43.5% absolute increase in marketing campaign effectiveness by targeting audiences with positive sentiment, boosting response rates from 33.2% to 76.7%. High-performance sentiment classification achieved a robust 86% F1 score, supported by 85.5% accuracy, 86% precision, and 85% recall.',
     link: 'https://joiceramiro.my.canva.site/ev-sentiment',
@@ -49,7 +49,7 @@ const sideProjects = [
   },
   {
     title: 'Diabetic Foot Analysis System',
-    tech: ['Python', 'Unstructured Data','MobileNetV3', 'CNN', 'Healthcare'],
+    tech: ['Python', 'Classification','MobileNetV3', 'CNN', 'Healthcare'],
     category: 'Computer Vision',
     description: 'A predictive model using foot pressure maps was developed by leveraging MobileNetV3, a lightweight CNN, to perform advanced image analysis and classify conditions based on pressure distribution patterns. The model achieved a validation accuracy of 87.9% and an average loss of 0.17 in classifying diabetic conditions. Healthcare professionals were provided with actionable insights from image analysis to facilitate earlier and more precise clinical interventions.',
     link: 'https://diafoot.streamlit.app',
