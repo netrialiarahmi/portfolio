@@ -59,7 +59,7 @@ export function HeroSection() {
           {/* Profile image */}
           <motion.div
             variants={itemVariants}
-            className="flex justify-center lg:justify-end order-2 lg:order-1"
+            className="flex justify-center lg:justify-end order-2 lg:order-1 pb-12"
           >
             <div className="relative group">
               <div className="absolute -inset-5 bg-gradient-to-br from-accent via-primary to-accent/40 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-700" />
@@ -67,16 +67,16 @@ export function HeroSection() {
                 <img
                   src={profileImage}
                   alt="Netri Alia Rahmi"
-                  className="relative w-60 h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full object-cover object-top shadow-xl"
+                  className="w-60 h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full object-cover object-top shadow-xl block"
                 />
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.5 }}
-                className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-accent text-accent-foreground px-4 py-2 rounded-2xl shadow-lg border-2 border-background text-center"
+                className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-max max-w-[220px] bg-accent text-accent-foreground px-4 py-2 rounded-2xl shadow-lg border-2 border-background text-center"
               >
-                <p className="font-bold text-xs mono leading-tight">Most Outstanding Student &amp; Graduate</p>
+                <p className="font-bold text-xs mono leading-tight">Most Outstanding Student & Graduate</p>
                 <p className="text-xs opacity-90 mt-0.5">Airlangga University</p>
               </motion.div>
             </div>
@@ -88,7 +88,7 @@ export function HeroSection() {
               variants={itemVariants}
               className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 tracking-tight leading-[1.05] text-white"
             >
-              Hi, I&apos;m{' '}
+              Hi, I'm{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-primary to-accent">
                 Alia
               </span>
@@ -97,20 +97,25 @@ export function HeroSection() {
 
             <motion.p
               variants={itemVariants}
-              className="text-lg sm:text-xl font-semibold text-white/90 mb-1"
+              className="text-lg sm:text-xl font-semibold text-white/90 mb-0.5"
             >
-              HR Data &amp; Analytics
+              HR Data & Analytics
             </motion.p>
             <motion.p
               variants={itemVariants}
-              className="text-sm sm:text-base text-white/55 mono mb-10 tracking-wide"
+              className="text-sm sm:text-base text-white/50 mono tracking-wide"
             >
               Kompas Gramedia
             </motion.p>
 
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap gap-3 justify-center lg:justify-start mb-8"
+              className="w-10 h-px bg-accent/40 my-8 mx-auto lg:mx-0"
+            />
+
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-wrap gap-3 justify-center lg:justify-start mb-6"
             >
               <Button
                 size="lg"
