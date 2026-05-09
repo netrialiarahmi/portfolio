@@ -76,7 +76,7 @@ export function HeroSection() {
                 transition={{ delay: 0.9, duration: 0.5 }}
                 className="absolute -bottom-4 -right-4 bg-accent text-accent-foreground px-5 py-3 rounded-2xl shadow-lg border-2 border-background"
               >
-                <p className="font-bold text-sm mono leading-tight">Most Outstanding</p>
+                <p className="font-bold text-sm mono leading-tight">Most Outstanding Student & Graduate</p>
                 <p className="text-xs opacity-90">Airlangga University</p>
               </motion.div>
             </div>
@@ -99,7 +99,7 @@ export function HeroSection() {
               variants={itemVariants}
               className="text-base sm:text-lg text-foreground/60 mb-10 mono"
             >
-              Data Scientist · ML Engineer · Analytics
+              HR Data & Analytics Kompas Gramedia
             </motion.p>
 
             <motion.div
