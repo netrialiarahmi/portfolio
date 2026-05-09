@@ -7,7 +7,7 @@ import { Briefcase } from '@phosphor-icons/react'
 const experiences = [
   {
     title: 'HR Data & Analytics Intern',
-    company: 'Kompas Cyber Media',
+    company: 'Kompas Gramedia',
     location: 'Jakarta, Indonesia',
     period: 'Oct 2025 - Now',
     highlights: [
