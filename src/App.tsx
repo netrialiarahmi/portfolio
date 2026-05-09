@@ -1,34 +1,55 @@
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Toaster } from '@/components/ui/sonner'
-import { Navbar } from '@/components/Navbar'
-import { HeroSection } from '@/components/HeroSection'
-import { AboutSection } from '@/components/AboutSection'
-import { EducationSection } from '@/components/EducationSection'
-import { CertificationSkillsSection } from '@/components/CertificationSkillsSection'
-import { ExperienceSection } from '@/components/ExperienceSection'
-import { LeadershipSection } from '@/components/LeadershipSection'
-import { AchievementsSection } from '@/components/AchievementsSection'
-import { HighlightedProjectsSection } from '@/components/HighlightedProjectsSection'
-import { PublicationsSection } from '@/components/PublicationsSection'
-import { ProjectsSection } from '@/components/ProjectsSection'
-import { Footer } from '@/components/Footer'
+import { ProfileSidebar } from '@/components/ProfileSidebar'
+import { TabNav } from '@/components/TabNav'
+import { AboutTab } from '@/components/tabs/AboutTab'
+import { ResumeTab } from '@/components/tabs/ResumeTab'
+import { ProjectsTab } from '@/components/tabs/ProjectsTab'
+import { MoreTab } from '@/components/tabs/MoreTab'
+
+export type TabKey = 'about' | 'resume' | 'projects' | 'more'
+
+const tabVariants = {
+  initial: { opacity: 0, y: 14 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -10 },
+}
 
 function App() {
+  const [activeTab, setActiveTab] = useState<TabKey>('about')
+
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <EducationSection />
-        <CertificationSkillsSection />
-        <ExperienceSection />
-        <LeadershipSection />
-        <AchievementsSection />
-        <HighlightedProjectsSection />
-        <PublicationsSection />
-        <ProjectsSection />
+    <div className="vcard-root">
+      <main className="vcard-main">
+        {/* Left sidebar */}
+        <ProfileSidebar />
+
+        {/* Right content */}
+        <div className="vcard-content">
+          {/* Tab navigation */}
+          <TabNav active={activeTab} onChange={setActiveTab} />
+
+          {/* Tab panels */}
+          <div className="vcard-panel-wrap">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeTab}
+                variants={tabVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={{ duration: 0.22, ease: 'easeOut' }}
+              >
+                {activeTab === 'about' && <AboutTab />}
+                {activeTab === 'resume' && <ResumeTab />}
+                {activeTab === 'projects' && <ProjectsTab />}
+                {activeTab === 'more' && <MoreTab />}
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
       </main>
-      <Footer />
       <Toaster position="bottom-right" />
     </div>
   )
