@@ -25,3 +25,5 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+portfolio-v1/node_modules/
+portfolio-v1/dist/
