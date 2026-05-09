@@ -1,6 +1,6 @@
 import type { TabKey } from '../App'
 
-interface TabNavProps {
+type Props = {
   active: TabKey
   onChange: (tab: TabKey) => void
 }
@@ -12,19 +12,17 @@ const TABS: { key: TabKey; label: string }[] = [
   { key: 'more', label: 'More' },
 ]
 
-export function TabNav({ active, onChange }: TabNavProps) {
+export function TabNav({ active, onChange }: Props) {
   return (
-    <nav className="tab-nav" aria-label="Portfolio sections">
-      <ul className="tab-list">
-        {TABS.map(({ key, label }) => (
-          <li key={key}>
+    <nav className="navbar">
+      <ul className="navbar-list">
+        {TABS.map((t) => (
+          <li className="navbar-item" key={t.key}>
             <button
-              className="tab-btn"
-              data-active={active === key}
-              onClick={() => onChange(key)}
-              aria-current={active === key ? 'page' : undefined}
+              className={`navbar-link ${active === t.key ? 'active' : ''}`}
+              onClick={() => onChange(t.key)}
             >
-              {label}
+              {t.label}
             </button>
           </li>
         ))}
