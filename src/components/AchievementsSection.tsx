@@ -143,7 +143,7 @@ export function AchievementsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
-  const totalAchievements = achievements.length + 20
+  const totalAchievements = achievements.length + 25
 
   return (
     <section id="achievements" ref={ref} className="py-20 px-4 sm:px-6 lg:px-8">
@@ -233,8 +233,8 @@ export function AchievementsSection() {
             <Card className="p-6 h-full bg-gradient-to-br from-muted/50 to-accent/5 border-2 border-dashed border-accent/30 hover:border-accent/50 transition-all duration-300 flex items-center justify-center">
               <div className="text-center">
                 <Sparkle size={40} className="text-accent mx-auto mb-3" weight="duotone" />
-                <p className="text-2xl font-bold text-accent mb-2">+20</p>
-                <p className="text-sm text-foreground/70">Other Awards<br/>& Recognition</p>
+                <p className="text-2xl font-bold text-accent mb-2">+25</p>
+                <p className="text-sm text-foreground/70">Others Achievements<br/>and Awards</p>
               </div>
             </Card>
           </motion.div>
